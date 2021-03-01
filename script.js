@@ -1,4 +1,5 @@
 $("#form").submit(e => {
+    console.log("test");
     if (!validateForm()) return false;
 });
 
