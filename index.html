@@ -79,10 +79,12 @@
                         <input type="password" class="form-control" id="inputPassword" pattern=".{8,32}">
                     </div>
                     <div class="col-6">
-                        <input type="tel" pattern="[0-9]{10}" placeholder="Phone" id="inp-phone" class="form-control">
+                        <label for="inputPhone" class="form-label">Phone</label>
+                        <input type="tel" pattern="[0-9]{10}" placeholder="Phone" id="inputPhone" class="form-control">
                     </div>
                     <div class="col-6">
-                            <input type="email" pattern="\w{1,50}@\w{1,50}.\w{1,50}" placeholder="Email" id="inp-email" class="form-control">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" pattern="\w{1,50}@\w{1,50}.\w{1,50}" placeholder="Email" id="inputEmail" class="form-control">
                     </div>
                     <div class="col-12 centered">
                         <button type="submit" class="btn btn-primary">Submit</button>
