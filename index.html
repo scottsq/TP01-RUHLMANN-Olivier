@@ -26,11 +26,11 @@
                 <form class="row g-3" id="form">
                     <div class="col-5">
                         <label for="inputFirstname" class="form-label">Firstname</label>
-                        <input type="text" class="form-control" id="inputFirstname" pattern="\w{3,35}" required>
+                        <input type="text" class="form-control" id="inputFirstname" pattern="\w{3,35}" placeholder="3 to 35 characters" required>
                     </div>
                     <div class="col-5">
                         <label for="inputLastname" class="form-label">Lastname</label>
-                        <input type="text" class="form-control" id="inputLastname" pattern="\w{3,35}" required>
+                        <input type="text" class="form-control" id="inputLastname" pattern="\w{3,35}" placeholder="3 to 35 characters" required>
                     </div>
                     <div class="col-2">
                         <label for="select-civility" class="form-label">Civility</label>
@@ -41,9 +41,13 @@
                         </select>
                     </div>
     
-                    <div class="col-12">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" required>
+                    <div class="col-6">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="abc@def.hij" required>
+                    </div>
+                    <div class="col-6">
+                        <label for="inputPhone" class="form-label">Phone</label>
+                        <input type="tel" pattern="[0-9]{10}" placeholder="Phone" id="inputPhone" class="form-control" placeholder="0123456789" required>
                     </div>
                     
     
@@ -57,7 +61,7 @@
                     </div>
                     <div class="col-6">
                         <label for="inputCity" class="form-label">City</label>
-                        <input type="text" class="form-control" id="inputCity" pattern="\w{2,50}" required>
+                        <input type="text" class="form-control" id="inputCity" pattern="\w{2,50}" placeholder="Sydney" required>
                     </div>
                     <div class="col-4">
                         <label for="inputState" class="form-label">State</label>
@@ -67,28 +71,20 @@
                     </div>
                     <div class="col-2">
                         <label for="inputZip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="inputZip" pattern="[0-9]{5}" required>
+                        <input type="text" class="form-control" id="inputZip" pattern="[0-9]{5}" placeholder="01234" required>
                     </div>
     
                     <div class="col-12">
                         <label for="inputLogin" class="form-label">Login</label>
-                        <input type="text" class="form-control" id="inputLogin" pattern=".{8,32}" required>
+                        <input type="text" class="form-control" id="inputLogin" pattern=".{8,32}" placeholder="8 to 32 characters" required>
                     </div>
                     <div class="col-6">
                         <label for="inputPassword" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword" pattern=".{8,32}" required>
+                        <input type="password" class="form-control" id="inputPassword" pattern=".{8,32}" placeholder="8 to 32 characters" required>
                     </div>                    
                     <div class="col-6">
                         <label for="inputPassword2" class="form-label">Confirm password</label>
-                        <input type="password" class="form-control" id="inputPassword2" pattern=".{8,32}" required>
-                    </div>
-                    <div class="col-6">
-                        <label for="inputPhone" class="form-label">Phone</label>
-                        <input type="tel" pattern="[0-9]{10}" placeholder="Phone" id="inputPhone" class="form-control" required>
-                    </div>
-                    <div class="col-6">
-                        <label for="inputEmail" class="form-label">Email</label>
-                        <input type="email" pattern="\w{1,50}@\w{1,50}.\w{1,50}" placeholder="Email" id="inputEmail" class="form-control" required>
+                        <input type="password" class="form-control" id="inputPassword2" pattern=".{8,32}" placeholder="8 to 32 characters" required>
                     </div>
                     <div class="col-12 centered">
                         <button type="submit" class="btn btn-primary">Submit</button>
