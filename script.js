@@ -19,7 +19,7 @@ function validateForm() {
             showDivError(elem);
             foundError = true;
         }
-        else if (divError) divError.addClass("hidden");
+        else showDivError(elem, true);
     });
     return foundError;
 }
@@ -32,7 +32,8 @@ function arePasswordsValid() {
     }
 }
 
-function showDivError(elem) {
+function showDivError(elem, hide=false) {
     let divError = elem.parent().find(".val-error").first(); 
-    if (divError) divError.removeClass("hidden");
+    if (divError && !hide) divError.removeClass("hidden");
+    else if (divError) divError.addClass("hidden");
 }
