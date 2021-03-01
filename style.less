@@ -2,10 +2,15 @@
 @titleForegroundColor: hsl(0%, 0%, 100%);
 @backgroundColor: hsl(0, 0%, 17%);
 @foregroundColor: hsl(0, 0%, 100%);
+@error: hsl(17, 100%, 68%);
 
 body {
     background-color: @backgroundColor;
     color: @foregroundColor;
+}
+
+.hidden {
+    display: none;
 }
 
 .centered {
@@ -19,4 +24,8 @@ body {
     .centered();
     background-color: @titleBackgroundColor;
     color: @titleForegroundColor;
+}
+
+.val-error {
+    color: @error;
 }
