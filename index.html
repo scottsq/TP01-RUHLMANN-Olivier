@@ -28,14 +28,14 @@
                         <label for="inputFirstname" class="form-label">Firstname</label>
                         <input type="text" class="form-control" id="inputFirstname" pattern="[a-zA-Z]{3,35}" placeholder="3 to 35 characters">
                         <div class="val-error hidden">
-                            Please enter a firstname between 3 to 35 characters.
+                            Please enter a firstname between 3 to 35 alpha characters.
                         </div>
                     </div>
                     <div class="col-5">
                         <label for="inputLastname" class="form-label">Lastname</label>
                         <input type="text" class="form-control" id="inputLastname" pattern="[a-zA-Z]{3,35}" placeholder="3 to 35 characters">
                         <div class="val-error hidden">
-                            Please enter a lastname between 3 to 35 characters.
+                            Please enter a lastname between 3 to 35 alpha characters.
                         </div>
                     </div>
                     <div class="col-2">
@@ -49,7 +49,7 @@
     
                     <div class="col-6">
                         <label for="inputEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="abc@def.hij">
+                        <input type="mail" class="form-control" id="inputEmail" placeholder="abc@def.hij">
                         <div class="val-error hidden">
                             Please enter a valid email.
                         </div>
@@ -75,7 +75,7 @@
                         <label for="inputCity" class="form-label">City</label>
                         <input type="text" class="form-control" id="inputCity" pattern="[a-zA-Z]{2,50}" placeholder="Sydney">
                         <div class="val-error hidden">
-                            Please enter a city between 2 to 50 characters.
+                            Please enter a city between 2 to 50 alpha characters.
                         </div>
                     </div>
                     <div class="col-4">
@@ -94,21 +94,21 @@
     
                     <div class="col-12">
                         <label for="inputLogin" class="form-label">Login</label>
-                        <input type="text" class="form-control" id="inputLogin" pattern="\\.{8,32}" placeholder="8 to 32 characters">
+                        <input type="text" class="form-control" id="inputLogin" pattern="[a-zA-Z0-9]{8,32}" placeholder="8 to 32 characters">
                         <div class="val-error hidden">
-                            Please enter a login between 8 to 32 characters.
+                            Please enter a login between 8 to 32 alphanumeric characters.
                         </div>
                     </div>
                     <div class="col-6">
                         <label for="inputPassword" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword" pattern="\\.{8,32}" placeholder="8 to 32 characters">
+                        <input type="password" class="form-control" id="inputPassword" pattern="[a-zA-Z0-9]{8,32}" placeholder="8 to 32 characters">
                         <div class="val-error hidden">
-                            Please enter a password between 8 to 32 characters.
+                            Please enter a password between 8 to 32 alphanumeric characters.
                         </div>
                     </div>                    
                     <div class="col-6">
                         <label for="inputPassword2" class="form-label">Confirm password</label>
-                        <input type="password" class="form-control" id="inputPassword2" pattern="\\.{8,32}" placeholder="8 to 32 characters">
+                        <input type="password" class="form-control" id="inputPassword2" pattern="[a-zA-Z0-9]{8,32}" placeholder="8 to 32 characters">
                         <div class="val-error hidden">
                             Passwords are not the same.
                         </div>
