@@ -1,0 +1,20 @@
+@titleBackgroundColor: hsl(284, 100%, 24%);
+@titleForegroundColor: hsl(0%, 0%, 100%);
+@backgroundColor: hsl(0, 0%, 17%);
+
+body {
+    color: @foregroundColor;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-container {
+    .centered();
+    background-color: @titleBackgroundColor;
+    color: @titleForegroundColor;
+}
