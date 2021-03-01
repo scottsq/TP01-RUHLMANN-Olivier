@@ -1,5 +1,5 @@
 $("#form").submit(e => {
-    if (!validateForm()) {
+    if (!validateForm() || !arePasswordsValid()) {
         e.preventDefault();
     }
 });
@@ -24,7 +24,9 @@ function arePasswordsValid() {
     let pwd2 = $("#inputPassword2");
     if (!pwd1.val() == pwd2.val()) {
         showDivError(pwd2);
+        return false;
     }
+    return true;
 }
 
 function showDivError(elem, hide=false) {
