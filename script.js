@@ -1,5 +1,12 @@
 $("#form").submit(e => {
-    if (!validateForm()) e.preventDefault();
+    if (!validateForm()) {
+        e.preventDefault();
+        console.log('test');
+    }
+    else {
+        e.preventDefault();
+        console.log("Oh no");
+    }
 });
 
 function validateForm() {
