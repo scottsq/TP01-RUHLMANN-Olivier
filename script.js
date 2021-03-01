@@ -1,10 +1,6 @@
 $("#form").submit(e => {
     if (!validateForm()) {
         e.preventDefault();
-        console.log('test');
-    }
-    else {
-        alert("Thank you!");
     }
 });
 
@@ -20,7 +16,7 @@ function validateForm() {
         }
         else showDivError(elem, true);
     });
-    return !sfoundError;
+    return !foundError;
 }
 
 function arePasswordsValid() {
