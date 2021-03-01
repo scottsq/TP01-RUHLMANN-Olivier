@@ -28,16 +28,10 @@
                         <label for="inputFirstname" class="form-label">Firstname</label>
                         <input type="text" class="form-control" id="inputFirstname" pattern="\w{3,35}" required>
                     </div>
-                    <div class="invalid-feedback">
-                        Please provide a valid firstname.
-                    </div>
                     <div class="col-5">
                         <label for="inputLastname" class="form-label">Lastname</label>
                         <input type="text" class="form-control" id="inputLastname" pattern="\w{3,35}" required>
                     </div>
-                    <div class="invalid-feedback">
-                            Please provide a valid lastname.
-                        </div>
                     <div class="col-2">
                         <label for="select-civility" class="form-label">Civility</label>
                         <select id="select-civility" class="form-control">
@@ -49,16 +43,13 @@
     
                     <div class="col-12">
                         <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
-                        <div class="invalid-feedback">
-                            Please provide a valid email.
-                        </div>
+                        <input type="email" class="form-control" id="inputEmail4" required>
                     </div>
                     
     
                     <div class="col-12">
                         <label for="inputAddress" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
                     </div>
                     <div class="col-12">
                         <label for="inputAddress2" class="form-label">Address 2</label>
@@ -66,63 +57,38 @@
                     </div>
                     <div class="col-6">
                         <label for="inputCity" class="form-label">City</label>
-                        <input type="text" class="form-control" id="inputCity" pattern="\w{2,50}">
-                        <div class="invalid-feedback">
-                            Please provide a valid city.
-                        </div>
+                        <input type="text" class="form-control" id="inputCity" pattern="\w{2,50}" required>
                     </div>
                     <div class="col-4">
                         <label for="inputState" class="form-label">State</label>
                         <select id="inputState" class="form-select">
-                            <option selected>Choose...</option>
-                            <option selected>France only :p</option>
+                            <option selected value="0">France only :p</option>
                         </select>
-                        <div class="invalid-feedback">
-                            Please provide a valid state.
-                        </div>
                     </div>
                     <div class="col-2">
                         <label for="inputZip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="inputZip" pattern="[0-9]{5}">
-                        <div class="invalid-feedback">
-                            Please provide a valid zip.
-                        </div>
+                        <input type="text" class="form-control" id="inputZip" pattern="[0-9]{5}" required>
                     </div>
     
                     <div class="col-12">
                         <label for="inputLogin" class="form-label">Login</label>
-                        <input type="text" class="form-control" id="inputLogin" pattern=".{8,32}">
-                        <div class="invalid-feedback">
-                            Please provide a valid login (8-32 characters).
-                        </div>
+                        <input type="text" class="form-control" id="inputLogin" pattern=".{8,32}" required>
                     </div>
                     <div class="col-6">
                         <label for="inputPassword" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword" pattern=".{8,32}">
-                        <div class="invalid-feedback">
-                            Please provide a valid password (8-32 characters).
-                        </div>
+                        <input type="password" class="form-control" id="inputPassword" pattern=".{8,32}" required>
                     </div>                    
                     <div class="col-6">
                         <label for="inputPassword2" class="form-label">Confirm password</label>
-                        <input type="password" class="form-control" id="inputPassword2" pattern=".{8,32}">
-                        <div class="invalid-feedback">
-                            Password are not the same.
-                        </div>
+                        <input type="password" class="form-control" id="inputPassword2" pattern=".{8,32}" required>
                     </div>
                     <div class="col-6">
                         <label for="inputPhone" class="form-label">Phone</label>
-                        <input type="tel" pattern="[0-9]{10}" placeholder="Phone" id="inputPhone" class="form-control">
-                        <div class="invalid-feedback">
-                            Please provide a valid phone number.
-                        </div>
+                        <input type="tel" pattern="[0-9]{10}" placeholder="Phone" id="inputPhone" class="form-control" required>
                     </div>
                     <div class="col-6">
                         <label for="inputEmail" class="form-label">Email</label>
-                        <input type="email" pattern="\w{1,50}@\w{1,50}.\w{1,50}" placeholder="Email" id="inputEmail" class="form-control">
-                        <div class="invalid-feedback">
-                            Please provide a valid email.
-                        </div>
+                        <input type="email" pattern="\w{1,50}@\w{1,50}.\w{1,50}" placeholder="Email" id="inputEmail" class="form-control" required>
                     </div>
                     <div class="col-12 centered">
                         <button type="submit" class="btn btn-primary">Submit</button>
