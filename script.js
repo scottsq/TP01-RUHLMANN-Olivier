@@ -1,6 +1,5 @@
 $("#form").submit(e => {
-    console.log("test");
-    if (!validateForm()) return false;
+    if (!validateForm()) e.preventDefault();
 });
 
 function validateForm() {
